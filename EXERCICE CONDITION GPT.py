@@ -15,7 +15,7 @@ else:
     print("il ne fait pas chaud !")
 
 # Note scolaire
-note = float(input("Quelle est ta note"))
+note = float(input("Quelle est ta note ?"))
 if note >= 10:
     print("Admis")
 else:
@@ -30,7 +30,7 @@ else:
     print("Vitesse correcte !")
 
 # Mention scolaire
-note = 16
+note = float(input("Quel est ta note ?"))
 if note >= 16:
     print("Excellent !")
 elif note>= 14:
