@@ -1,4 +1,4 @@
-# EXERCIE
+# EXERCICE 4
 # Accès à une plateforme
 
 age = int(input("Age :"))
