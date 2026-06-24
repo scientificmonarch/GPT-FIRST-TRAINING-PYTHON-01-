@@ -26,3 +26,12 @@ if st.button("Vérifier mon nombre"):
     else:
         st.success(f"Bravo ! 🎉 tu as trouvé en {st.session_state.essais} essais !")
         st.balloons() # L'animation de victoire ! 
+
+    # 5. Bouton pour recommencer 
+    if st.button("🔄 Recommencer une partie"):
+        st.session_state.nombre_secret = random.randint(1, 100)
+        st.sessions_state.essais = 0
+        st.rerun() # Relance la page avec les nouvelles valeurs 
+
+
+
