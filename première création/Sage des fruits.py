@@ -1,0 +1,8 @@
+# LES FRUITS 
+fruits = ["papaye", "mangue", "pastèque", "banane"]
+# index =   0           1           2           3
+
+# LEURS BIENFAITS
+papaye =  "🍈 Profil nutritionnel et santé, Sa richesse : La papaye est une excellente source de vitamine C (renforce les défenses immunitaires), de vitamine A (bonne pour les yeux et la peau), de fibres (digestion) et contient une enzyme naturelle appelée papaye qui facilite la digestion des protéines., La bonne quantité : Une portion de 150 à 250 g, soit environ ½ petite papaye, 3 à 5 fois par semaine est idéale pour un adulte., 🛒 Achat et conservation Le choix : Choisissez une papaye dont la peau est majoritairement jaune-orangé avec une légère souplesse au toucher. Une papaye entièrement verte continuera de mûrir à température ambiante., L'astuce fraîcheur : Une fois mûre, conservez-la au réfrigérateur pendant 2 à 3 jours. Après découpe, gardez-la dans un récipient hermétique., 🍳 Consommation et cuisine Les moments idéaux : Au petit-déjeuner, en dessert ou après un repas copieux grâce à ses propriétés digestives., Les mariages parfaits : Elle accompagne très bien le citron vert, l'ananas, la mangue, la noix de coco, le yaourt nature et le gingembre., ♻️ Anti-gaspillage Si votre papaye devient très mûre, transformez-la en smoothie, en sorbet, en confiture ou incorporez-la dans un gâteau. Les graines sont également comestibles en petite quantité et apportent une saveur légèrement poivrée." 
+print("PAPAYE :", PAPAYE)
+MANGUE = "🥭 Profil nutritionnel et santé, Sa richesse : La mangue est riche en vitamines A et C, en antioxydants, en fibres et en potassium. Elle favorise une bonne immunité, une peau en bonne santé et une digestion harmonieuse. 
