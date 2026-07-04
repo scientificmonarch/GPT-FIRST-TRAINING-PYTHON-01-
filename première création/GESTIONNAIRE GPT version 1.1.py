@@ -10,6 +10,7 @@ courses = []
 
 choix = 0
 
+
 while choix != 5:
     print("===== GESTIONNAIRE DE COURSES =====")
     print("1-Afficher la liste")
@@ -23,7 +24,11 @@ while choix != 5:
         if len(courses) == 0:
             print("La liste est vide.")
         else: 
-            print(courses)
+            print("==== MA LISTE ====")
+            numero = 1
+            for produit in courses:    
+                print(numero, "-", produit)
+                numero += 1
 
     elif choix == 2:
         produit =input("Saisissez le produit à ajouter : ")
@@ -46,9 +51,12 @@ while choix != 5:
             print("La liste est vide.")
         else:
             courses.sort()
-            print(courses)
-            print("Liste triée !")
-            
+            print("==== MA LISTE TRIÉE ====")
+            numero = 1
+            for produit in courses:
+                print(numero, "-", produit)
+                numero += 1
+
     elif choix == 5:
         print("Quittez")
     else :
