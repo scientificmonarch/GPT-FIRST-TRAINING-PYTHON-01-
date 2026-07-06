@@ -1,11 +1,11 @@
 #ROADMAP
-#créer une liste vide 
-#Demander une Option à selectionner à l'utilisateur
-#Afficher la liste
-#Ajouter un film
-#Supprimer un film
-#Trier la liste
-#Quitter
+#1-créer une liste vide 
+#2-Demander une Option à selectionner à l'utilisateur
+#3-Afficher la liste
+#4-Ajouter un film
+#5-Supprimer un film
+#6-Trier la liste
+#7-Quitter
 
 films = []
 def afficher_films():
