@@ -8,22 +8,14 @@
 #7-Quitter
 
 films = []
-def afficher_films():
-    if len(films) == 0:
+def afficher_liste(liste, titre):
+    if len(liste) == 0:
         print("La liste est vide.")
-    else:
-        print("==== MA LISTE ====")
-        for i, film in enumerate(films, start=1):
-            print(i, "-", film)
+    else: 
+        print(titre)
+        for numero, element in enumerate(liste, start=1):  
+            print(numero, "-", element)
 
-def trier_films():
-    if len(films) == 0:
-        print("La liste est vide.")
-    else:
-        films.sort()
-        print("==== MA LISTE TRIÉE ====")
-        for i, film in enumerate(films, start=1):
-            print(i, "-", film)
 
 while True:
     print("==== GESTIONNAIRE DE FILMS ====")
@@ -35,7 +27,7 @@ while True:
     option =int(input("choisissez une option entre (1 à 5) : "))
 
     if option == 1:
-        afficher_films()
+        afficher_liste(films, "=== MA LISTE ===")
     
     elif option == 2:
         film =input("Saisissez le film à ajouter : ")
@@ -53,7 +45,7 @@ while True:
             else:
                 print("le film", film, "n'est pas dans la liste.")      
     elif option == 4:
-        trier_films()
+        afficher_liste(films, "=== MA LISTE TRIE ===")
             
     elif option == 5:
         print("Au revoir !")
