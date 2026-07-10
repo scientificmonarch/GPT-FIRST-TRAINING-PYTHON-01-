@@ -1,18 +1,3 @@
-#ROAD MAP : GESTIONNAIRE DE COURSES VERSION 1.0
-# Créer une liste
-# Afficher la liste
-# Ajouter un produit
-# Supprimer un produit
-# Trier la liste
-# Quitter le programme
-
-courses = []
-
-choix = 0
-
-    
-    
-
 def afficher_liste(liste, titre):
     if len(liste) == 0:
         print("La liste est vide.")
@@ -20,8 +5,20 @@ def afficher_liste(liste, titre):
         print(titre)
         for numero, element in enumerate(liste, start=1):  
             print(numero, "-", element)
-                
 
+def chercher_produit(liste, produit_rechercher):
+    for i in liste:
+        if produit_rechercher == i:
+            return i
+
+    return None
+
+
+courses = []
+
+choix = 0
+
+    
 
 
 while choix != 5:
@@ -30,8 +27,9 @@ while choix != 5:
     print("2-Ajouter un produit")
     print("3-Supprimer un produit")
     print("4-Trier la liste")
-    print("5-Quitter")
-    choix = int(input("Choisissez une option (1-5) : "))
+    print("5-Rechercher")
+    print("6-Quittez")
+    choix = int(input("Choisissez une option (1-6) : "))
     
     if choix == 1:
         afficher_liste(courses, "=== MA LISTE ===")
@@ -55,9 +53,19 @@ while choix != 5:
     elif choix == 4:
         courses.sort()
         afficher_liste(courses, "=== MA LISTE TRIE ===")
-        
+
     elif choix == 5:
         print("Au revoir !")
+
+    elif choix ==6:
+        recherche = input("Entrez le produit : ")
+        produit = chercher_produit(courses, recherche)
+        if produit is not None :
+            print("Pouduit trouvé :", produit)
+        else:
+            print("Produit introuvable")
+        
+    
     else :
-         print("Choix invalide.")
+            print("Choix invalide.")
      
